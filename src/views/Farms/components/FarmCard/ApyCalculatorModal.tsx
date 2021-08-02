@@ -1,9 +1,9 @@
-import React from 'react'
+import { Flex, LinkExternal, Modal, Text } from '@saltswap/uikit'
 import BigNumber from 'bignumber.js'
-import styled from 'styled-components'
-import { Modal, Text, LinkExternal, Flex } from '@saltswap/uikit'
 import useI18n from 'hooks/useI18n'
-import { calculateCakeEarnedPerThousandDollars, apyModalRoi } from 'utils/compoundApyHelpers'
+import React from 'react'
+import styled from 'styled-components'
+import { apyModalRoi, calculateCakeEarnedPerThousandDollars } from 'utils/compoundApyHelpers'
 
 interface ApyCalculatorModalProps {
   onDismiss?: () => void
@@ -63,7 +63,6 @@ const ApyCalculatorModal: React.FC<ApyCalculatorModalProps> = ({
             {TranslateString(864, 'CAKE per $1000')}
           </Text>
         </GridItem>
-        {/* 1 day row */}
         <GridItem>
           <Text>1d</Text>
         </GridItem>
@@ -75,7 +74,6 @@ const ApyCalculatorModal: React.FC<ApyCalculatorModalProps> = ({
         <GridItem>
           <Text>{cakeEarnedPerThousand1D}</Text>
         </GridItem>
-        {/* 7 day row */}
         <GridItem>
           <Text>7d</Text>
         </GridItem>
@@ -87,7 +85,6 @@ const ApyCalculatorModal: React.FC<ApyCalculatorModalProps> = ({
         <GridItem>
           <Text>{cakeEarnedPerThousand7D}</Text>
         </GridItem>
-        {/* 30 day row */}
         <GridItem>
           <Text>30d</Text>
         </GridItem>
@@ -99,7 +96,6 @@ const ApyCalculatorModal: React.FC<ApyCalculatorModalProps> = ({
         <GridItem>
           <Text>{cakeEarnedPerThousand30D}</Text>
         </GridItem>
-        {/* 365 day / APY row */}
         <GridItem>
           <Text>365d(APY)</Text>
         </GridItem>

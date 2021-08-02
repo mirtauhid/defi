@@ -1,13 +1,13 @@
-import React, { useEffect, Suspense, lazy } from 'react'
-import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
 import { ResetCSS } from '@saltswap/uikit'
 import BigNumber from 'bignumber.js'
+import React, { lazy, Suspense, useEffect } from 'react'
+import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom'
 import { useFetchProfile, useFetchPublicData } from 'state/hooks'
-import GlobalStyle from './style/Global'
 import Menu from './components/Menu'
-import ToastListener from './components/ToastListener'
 import PageLoader from './components/PageLoader'
+import ToastListener from './components/ToastListener'
+import GlobalStyle from './style/Global'
 import Pools from './views/Pools'
 
 // Route-based code splitting
@@ -80,14 +80,12 @@ const App: React.FC = () => {
             <Route path="/profile">
               <Profile />
             </Route>
-            {/* Redirect */}
             <Route path="/staking">
               <Redirect to="/pools" />
             </Route>
             <Route path="/syrup">
               <Redirect to="/pools" />
             </Route>
-            {/* 404 */}
             <Route component={NotFound} />
           </Switch>
         </Suspense>

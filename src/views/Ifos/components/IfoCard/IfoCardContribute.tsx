@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react'
-import { useModal, Button, Text } from '@saltswap/uikit'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
+import { Button, Text, useModal } from '@saltswap/uikit'
 import BigNumber from 'bignumber.js'
-import { Contract } from 'web3-eth-contract'
-import { useERC20 } from 'hooks/useContract'
+import { IfoStatus } from 'config/constants/types'
 import { useIfoAllowance } from 'hooks/useAllowance'
 import { useIfoApprove } from 'hooks/useApprove'
-import { IfoStatus } from 'config/constants/types'
+import { useERC20 } from 'hooks/useContract'
+import React, { useEffect, useState } from 'react'
 import { getBalanceNumber } from 'utils/formatBalance'
-import LabelButton from './LabelButton'
+import { Contract } from 'web3-eth-contract'
 import ContributeModal from './ContributeModal'
+import LabelButton from './LabelButton'
 
 export interface Props {
   address: string
