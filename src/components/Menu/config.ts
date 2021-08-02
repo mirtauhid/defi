@@ -6,30 +6,29 @@ const config: MenuEntry[] = [
     icon: 'HomeIcon',
     href: '/',
   },
+  {
+    label: 'Trade',
+    icon: 'TradeIcon',
+    items: [
       {
         label: 'Exchange',
         href: 'https://exchange.owld.app/#/swap',
-        icon: "ExchangeIcon",
       },
       {
         label: 'Liquidity',
         href: 'https://exchange.owld.app/#/pool',
-        icon: "LiquidityIcon",
       },
+    ],
+  },
   {
     label: 'Farms',
     icon: 'FarmIcon',
     href: '/farms',
   },
   {
-    label: 'Pools',
+    label: 'Salty Pools',
     icon: 'PoolIcon',
     href: '/pools',
-  },
-  {
-  label:'Lottery',
-  icon: 'TicketIcon',
-  href: '/lottery',
   },
   // {
   //   label: 'Lottery',

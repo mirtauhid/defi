@@ -1,10 +1,10 @@
-import React from 'react'
 import { Card, CardBody, Heading, Text } from '@saltswap/uikit'
-import styled from 'styled-components'
-import { getBalanceNumber } from 'utils/formatBalance'
-import { useTotalSupply, useBurnedBalance } from 'hooks/useTokenBalance'
 import useI18n from 'hooks/useI18n'
+import { useBurnedBalance, useTotalSupply } from 'hooks/useTokenBalance'
+import React from 'react'
+import styled from 'styled-components'
 import { getCakeAddress } from 'utils/addressHelpers'
+import { getBalanceNumber } from 'utils/formatBalance'
 import CardValue from './CardValue'
 
 const StyledCakeStats = styled(Card)`

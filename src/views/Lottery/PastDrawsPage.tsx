@@ -1,8 +1,8 @@
+import { BaseLayout } from '@saltswap/uikit'
 import React from 'react'
 import styled from 'styled-components'
-import { BaseLayout } from '@saltswap/uikit'
-import PastLotteryRoundViewer from './components/PastLotteryRoundViewer'
 import PastDrawsHistoryCard from './components/PastDrawsHistory/PastDrawsHistoryCard'
+import PastLotteryRoundViewer from './components/PastLotteryRoundViewer'
 
 const Cards = styled(BaseLayout)`
   align-items: start;

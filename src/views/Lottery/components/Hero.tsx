@@ -1,8 +1,8 @@
+import { Heading, Text } from '@saltswap/uikit'
+import Container from 'components/layout/Container'
+import useI18n from 'hooks/useI18n'
 import React from 'react'
 import styled from 'styled-components'
-import { Heading, Text } from '@saltswap/uikit'
-import useI18n from 'hooks/useI18n'
-import Container from 'components/layout/Container'
 import LotteryProgress from './LotteryProgress'
 
 const Title = styled(Heading).attrs({ as: 'h1', size: 'xl' })`
@@ -17,7 +17,7 @@ const Blurb = styled(Text)`
 `
 
 const StyledHero = styled.div`
-  background-image: linear-gradient(180deg, #FFA500 0%, #FFA555 100%);
+  background-image: linear-gradient(180deg, #ffa500 0%, #ffa555 100%);
   padding-bottom: 40px;
   padding-top: 40px;
 `
@@ -70,7 +70,7 @@ const Hero = () => {
     <StyledHero>
       <StyledContainer>
         <LeftWrapper>
-          <Title >{TranslateString(708, 'The OWL Lottery')}</Title>
+          <Title>{TranslateString(708, 'The OWL Lottery')}</Title>
           <Blurb>{TranslateString(710, 'Buy tickets with OWL')}</Blurb>
           <Blurb>{TranslateString(712, 'Win if 2, 3, or 4 of your ticket numbers match!')}</Blurb>
         </LeftWrapper>

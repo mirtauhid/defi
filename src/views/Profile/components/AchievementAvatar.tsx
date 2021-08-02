@@ -1,6 +1,6 @@
+import { ArrowBackIcon } from '@saltswap/uikit'
 import React, { ImgHTMLAttributes } from 'react'
 import styled from 'styled-components'
-import { ArrowBackIcon } from '@saltswap/uikit'
 
 interface AchievementAvatarProps extends ImgHTMLAttributes<HTMLImageElement> {
   badge?: string

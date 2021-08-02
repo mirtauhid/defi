@@ -1,15 +1,10 @@
+import { Text } from '@saltswap/uikit'
+import useGetLotteryHasDrawn from 'hooks/useGetLotteryHasDrawn'
+import useI18n from 'hooks/useI18n'
+import { useCurrentTime } from 'hooks/useTimer'
 import React from 'react'
 import styled from 'styled-components'
-import { Text, Progress } from '@saltswap/uikit'
-import useI18n from 'hooks/useI18n'
-import useGetLotteryHasDrawn from 'hooks/useGetLotteryHasDrawn'
-import { useCurrentTime } from 'hooks/useTimer'
-import {
-  getLotteryDrawTime,
-  getLotteryDrawStep,
-  getTicketSaleTime,
-  getTicketSaleStep,
-} from '../helpers/CountdownHelpers'
+import { getLotteryDrawTime, getTicketSaleTime } from '../helpers/CountdownHelpers'
 
 const ProgressWrapper = styled.div`
   display: block;
@@ -43,7 +38,6 @@ const LotteryProgress = () => {
 
   return (
     <ProgressWrapper>
-
       <TopTextWrapper>
         <StyledPrimaryText fontSize="20px" bold color="contrast">
           {lotteryHasDrawn ? timeUntilTicketSale : timeUntilLotteryDraw}

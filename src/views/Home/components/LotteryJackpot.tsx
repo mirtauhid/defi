@@ -1,10 +1,10 @@
-import React from 'react'
 import { Text } from '@saltswap/uikit'
-import { getBalanceNumber } from 'utils/formatBalance'
-import { useTotalRewards } from 'hooks/useTickets'
-import useI18n from 'hooks/useI18n'
-import { usePriceCakeBusd } from 'state/hooks'
 import { BigNumber } from 'bignumber.js'
+import useI18n from 'hooks/useI18n'
+import { useTotalRewards } from 'hooks/useTickets'
+import React from 'react'
+import { usePriceCakeBusd } from 'state/hooks'
+import { getBalanceNumber } from 'utils/formatBalance'
 import CardBusdValue from './CardBusdValue'
 
 const LotteryJackpot = () => {

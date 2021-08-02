@@ -1,6 +1,6 @@
-import React from 'react'
 import { ArrowBackIcon, Flex, Heading } from '@saltswap/uikit'
 import useI18n from 'hooks/useI18n'
+import React from 'react'
 
 interface ComingSoonProps {
   children?: React.ReactNode

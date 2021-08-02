@@ -1,12 +1,12 @@
+import { CardBody, CardFooter, Heading, SaltRoundIcon } from '@saltswap/uikit'
+import useI18n from 'hooks/useI18n'
 import React from 'react'
 import styled from 'styled-components'
-import { Heading, CardBody, CardFooter, SaltRoundIcon, TicketRound } from '@saltswap/uikit'
-import useI18n from 'hooks/useI18n'
 import { DataResponse } from 'utils/getLotteryRoundData'
 import LotteryCardHeading from '../LotteryCardHeading'
-import PastLotteryActions from './PastLotteryActions'
 import PrizeGrid from '../PrizeGrid'
 import Timestamp from '../Timestamp'
+import PastLotteryActions from './PastLotteryActions'
 
 interface PastRoundCardDetailsProps {
   data: DataResponse

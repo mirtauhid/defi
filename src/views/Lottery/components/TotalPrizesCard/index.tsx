@@ -1,12 +1,12 @@
-import React, { useContext, useState } from 'react'
-import styled from 'styled-components'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
-import { Heading, Card, CardBody, CardFooter, Text, SaltRoundIcon, Flex, Skeleton } from '@saltswap/uikit'
-import { getBalanceNumber } from 'utils/formatBalance'
+import { Card, CardBody, CardFooter, Flex, Heading, SaltRoundIcon, Skeleton, Text } from '@saltswap/uikit'
+import ExpandableSectionButton from 'components/ExpandableSectionButton/ExpandableSectionButton'
+import PastLotteryDataContext from 'contexts/PastLotteryDataContext'
 import useI18n from 'hooks/useI18n'
 import { useTotalRewards } from 'hooks/useTickets'
-import PastLotteryDataContext from 'contexts/PastLotteryDataContext'
-import ExpandableSectionButton from 'components/ExpandableSectionButton/ExpandableSectionButton'
+import React, { useContext, useState } from 'react'
+import styled from 'styled-components'
+import { getBalanceNumber } from 'utils/formatBalance'
 import PrizeGrid from '../PrizeGrid'
 
 const CardHeading = styled.div`

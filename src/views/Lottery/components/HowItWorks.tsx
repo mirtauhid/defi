@@ -1,7 +1,7 @@
+import { Heading, Image, Link, Text } from '@saltswap/uikit'
+import useI18n from 'hooks/useI18n'
 import React from 'react'
 import styled from 'styled-components'
-import { Text, Heading, Link, Image } from '@saltswap/uikit'
-import useI18n from 'hooks/useI18n'
 
 const LayoutWrapper = styled.div`
   max-width: 500px;
@@ -28,7 +28,6 @@ const HowItWorks = () => {
 
   return (
     <LayoutWrapper>
-
       <StyledHeading size="lg" as="h3" color="secondary">
         {TranslateString(632, 'How it works')}
       </StyledHeading>
